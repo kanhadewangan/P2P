@@ -5,7 +5,9 @@ import cors from 'cors';
 import router from './routes/index.js'
 configDotenv();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:"http://localhost:3001"|| "https://p2-p-ktp7-1vrusyyd2-kanhadewangans-projects.vercel.app"|| "https://payfast-two.vercel.app/"
+}));
 
 console.log(process.env.MONGO_URL);
 const connectionDb = mongoose.connect(process.env.MONGO_URL);
