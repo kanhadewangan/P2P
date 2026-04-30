@@ -11,11 +11,5 @@
       "src": "/(.*)",
       "dest": "index.js"
     }
-  ],
-  "env": {
-    "MONGO_URI": "@mongodb_uri",
-    "JWT_SECRET": "@jwt_secret"
-  },
-  "buildCommand": "npm install",
-  "installCommand": "npm install"
+  ]
 }
